@@ -12,10 +12,10 @@ defined('_JEXEC') or die();
 <div class="mod_rsgallery2_latest_galleries">
 	<table class="mod_rsgallery2_latest_galleries_table" >
 		<?php
-		$item = 0; // Todo : $ItemIdx
+		$ItemIdx = 0; 
 		for ($row = 1; $row <= $countRows; $row++) {
 			// If there still is a gallery image to show, start a new row
-			if (!isset($latestGalleries[$item])) {
+			if (!isset($latestGalleries[$ItemIdx])) {
 				break;
 			}
 
@@ -23,28 +23,28 @@ defined('_JEXEC') or die();
 			for ($column = 1; $column <= $countColumns; $column++) {
 
 				// If there still is a gallery image to show, show it, otherwise, continue
-				if (!isset($latestGalleries[$item])) {
+				if (!isset($latestGalleries[$ItemIdx])) {
 					break;
 				}
 
                 $HTML = '';
                 echo '<td>';
 				// Get the gallery  of the item to show
-				$gallery = new rsgGallery($latestGalleries[$item]);
+				$gallery = new rsgGallery($latestGalleries[$ItemIdx]);
 				// Get the name of the item to show
-				$itemName = $gallery->thumb->name;
+				$ItemIdxName = $gallery->thumb->name;
 				
 				// Create HTML for image: get the url (with/without watermark) with img attributes
 				if ($displayType == 1) {
 					// *** display ***: 
 					$watermark = $rsgConfig->get('watermark');
-					$imageUrl = $watermark ? waterMarker::showMarkedImage( $itemName ) : imgUtils::getImgDisplay( $itemName );
-					$HTML = '<img class="rsg2-displayImage" src="'.$imageUrl.'" alt="'.$itemName.'" title="'.$itemName.'" '.$imgAttributes.'/>';
+					$imageUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName ) : imgUtils::getImgDisplay( $ItemIdxName );
+					$HTML = '<img class="rsg2-displayImage" src="'.$imageUrl.'" alt="'.$ItemIdxName.'" title="'.$ItemIdxName.'" '.$imgAttributes.'/>';
 				} elseif ($displayType == 2) {
 					// *** original ***
 					$watermark = $rsgConfig->get('watermark');
-					$imageOriginalUrl = $watermark ? waterMarker::showMarkedImage( $itemName, 'original' ) : imgUtils::getImgOriginal( $itemName );
-					$HTML = '<img class="rsg2-displayImage" src="'.$imageOriginalUrl.'" alt="'.$itemName.'" title="'.$itemName.'" '.$imgAttributes.'/>';
+					$imageOriginalUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName, 'original' ) : imgUtils::getImgOriginal( $ItemIdxName );
+					$HTML = '<img class="rsg2-displayImage" src="'.$imageOriginalUrl.'" alt="'.$ItemIdxName.'" title="'.$ItemIdxName.'" '.$imgAttributes.'/>';
 				} else {
 					// *** thumb ***
 					$HTML = galleryUtils::getThumb( $gallery->get('id'),$imageHeight,$imageWidth,"mod_rsgallery2_latest_galleries_img" );	// thumbid, height, width, class
@@ -82,7 +82,7 @@ defined('_JEXEC') or die();
 				?>
 				</div>
 	<?php
-				$item++;
+				$ItemIdx++;
 				echo '</td>';
 			}	
 			echo '</tr>';
