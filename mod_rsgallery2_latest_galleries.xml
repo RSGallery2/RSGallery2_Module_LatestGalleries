@@ -28,15 +28,33 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="spacer1" type="spacer" class="text"
+				<field 
+					name="spacer1" 
+					type="spacer" 
+					class="text"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_IMAGES"
 				/>
 				
-				<field name="countrows" type="text" default="3" label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS" description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS_DESC" />
-				<field name="countcolumns" type="text" default="3" label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS" description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS_DESC" /> 
+				<field 
+					name="countrows" 
+					type="text" 
+					default="3" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS_DESC" />
+				<field 
+					name="countcolumns" 
+					type="text" 
+					default="3" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS_DESC" /> 
 				<field name="filteringspacer3" type="spacer" hr="true" />
 				
-				<field name="galleryids" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS" description="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS_DESC" />
+				<field 
+					name="galleryids" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS_DESC" />
 				<field 
 					name="includechildren" 
 					type="radio" 
@@ -48,47 +66,124 @@
 					<option value="1">JYES</option>
 				</field>
 				
-				<field name="filteringspacer5" type="spacer" hr="true" />
+				<field 
+					name="filteringspacer5" 
+					type="spacer" 
+					hr="true" />
 				
-				<field name="displaytype" type="list" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE" description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DESC">
+				<field 
+					name="displaytype" 
+					type="list" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DESC">
 					<option value="0">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_THUMB</option>
 					<option value="1">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DISPLAY</option>
 					<option value="2">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_ORIGINAL</option>
 				</field>
 				
-				<field name="filteringspacer1" type="spacer" hr="true" />
+				<field 
+					name="filteringspacer1" 
+					type="spacer" 
+					hr="true"
+				/>
 				
-				<field name="spacer_imagecsssize" type="spacer" class="text"
+				<field 
+					name="spacer_imagecsssize" 
+					type="spacer" 
+					class="text"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGECSSSIZE_SPACER"
 				/>
 				
-				<field name="imageheight" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_HEIGHT" description="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_HEIGHT_DESC" />
-				<field name="imagewidth" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_WIDTH" description="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_WIDTH_DESC" />
-				<field name="spacer_divcsssize" type="spacer" class="text"
+				<field 
+					name="imageheight" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_HEIGHT" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_HEIGHT_DESC" 
+				/>
+				
+				<field 
+					name="imagewidth" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_WIDTH" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_IMAGE_WIDTH_DESC" 
+				/>
+				
+				<field 
+					name="spacer_divcsssize" 
+					type="spacer" 
+					class="text"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVCSSSIZE_SPACER"
 				/>
-				<field name="divheight" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_HEIGHT" description="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_HEIGHT_DESC" />
-				<field name="divwidth" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH" description="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH_DESC" />
+				<field 
+					name="divheight" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_HEIGHT" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_HEIGHT_DESC" 
+				/>
+				<field 
+					name="divwidth" 
+					type="text" 
+					default="0" 
+					abel="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH_DESC" 
+					/>
 				
-				<field name="spacer_divnamecsssize" type="spacer" class="text"
+				<field 
+					name="spacer_divnamecsssize" 
+					type="spacer" 
+					class="text"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAMECSSSIZE_SPACER"
 				/>
 				
-				<field name="divnameheight" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT" description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT_DESC" />
+				<field 
+					name="divnameheight" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT_DESC" 
+				/>
 				<!--<field name="divnamewidth" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH" description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH_DESC" />-->
-				<field name="filteringspacer4" type="spacer" hr="true" />
-				<field name="displayname" type="radio" default="1" label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME" description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME_DESC">
+				<field 
+					name="filteringspacer4" 
+					type="spacer" 
+					hr="true" 
+					/>
+				<field 
+					name="displayname" 
+					type="radio" 
+					class="btn-group btn-group-yesno"
+					default="1" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="displaydate" type="radio" default="1" label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE" description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE_DESC">
+				<field 
+					name="displaydate" 
+					type="radio" default="1" 
+					class="btn-group btn-group-yesno"
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="dateformat" type="text" default="d-m-Y" label="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT" description="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT_DESC">
+				<field 
+					name="dateformat" 
+					type="text" 
+					default="d-m-Y" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT_DESC">
 				</field>
 				
-				<field name="filteringspacer2" type="spacer" hr="true" />
+				<field 
+					name="filteringspacer2" 
+					type="spacer" 
+					hr="true" 
+				/>
 			</fieldset>
 			
 			<fieldset
