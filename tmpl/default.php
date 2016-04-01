@@ -54,7 +54,7 @@ defined('_JEXEC') or die();
 
 				// Show it
 				?>
-				<div class="mod_rsgallery2_latest_galleries_attibutes" <?php echo $divAttributes;?>>
+				<div class="mod_rsgallery2_latest_galleries_attributes" <?php echo $divAttributes;?>>
 					<div class="mod_rsgallery2_latest_galleries-cell">
 						<a href="<?php echo $gallery->url;?>">
 							
