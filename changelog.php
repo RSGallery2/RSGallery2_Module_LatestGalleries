@@ -24,6 +24,15 @@ Legend:
 
 ---------------- Recent ----------------
 
+* --- 4.0.1 --- 2018-06-06 --- whazzup ------------------------------
+
+^ Pathes to files now written with slashes '../.../...' instead of '...' . DS . '...'
++ Added updateserver file
+
+* --- 4.0.0 --- 2015-09-21 --- whazzup ------------------------------
+
+! Released version module_rsgallery2_latestgalleries Version_4.0.0 J3x
+
 ---------------- 2015-08-23 whazzup V4.0.0 -------------
 + Ready for J!3.x 
 

@@ -1,6 +1,6 @@
 # RSGallery2_Module_LatestGalleries
 Module to show latest galleries from RSGallery2 
-The RSGallery2 Module LatestGalleries shows as the name suggests the latest galleries from RSGallery2 galleries.
+The RSGallery2 Module LatestGalleries shows as the name suggests the latest created galleries from RSGallery2 galleries.
 
 * .
 * .
@@ -14,7 +14,7 @@ The RSGallery2 Module LatestGalleries shows as the name suggests the latest gall
 * .
 * .
 
-##Parameter in backend
+##Parameter in back end
 
 * **Number of rows:** Number of vertical images  (Images per column)  
 * **Number of columns:** Number of horizontal images (Images per row)  
