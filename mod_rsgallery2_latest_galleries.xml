@@ -165,7 +165,8 @@
 				</field>
 				<field 
 					name="displaydate" 
-					type="radio" default="1" 
+					type="radio" 
+					default="1" 
 					class="btn-group btn-group-yesno"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE" 
 					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE_DESC">
