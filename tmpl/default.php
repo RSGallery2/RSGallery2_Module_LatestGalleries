@@ -32,25 +32,41 @@ defined('_JEXEC') or die();
 				// Get the gallery  of the item to show
 				$gallery = new rsgGallery($latestGalleries[$ItemIdx]);
 				// Get the name of the item to show
-				$ItemIdxName = $gallery->thumb->name;
-				
-				// Create HTML for image: get the url (with/without watermark) with img attributes
-				if ($displayType == 1) {
-					// *** display ***: 
-					$watermark = $rsgConfig->get('watermark');
-					//$imageUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName ) : imgUtils::getImgDisplayPath( $ItemIdxName );
-					$imageUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName ) : imgUtils::getImgDisplay( $ItemIdxName );
-					$HTML = '<img class="rsg2-displayImage" src="'.$imageUrl.'" alt="'.$ItemIdxName.'" title="'.$ItemIdxName.'" '.$imgAttributes.'/>';
-				} elseif ($displayType == 2) {
-					// *** original ***
-					$watermark = $rsgConfig->get('watermark');
-					//$imageOriginalUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName, 'original' ) : imgUtils::getImgOriginalPath( $ItemIdxName );
-					$imageOriginalUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName, 'original' ) : imgUtils::getImgOriginal( $ItemIdxName );
-					$HTML = '<img class="rsg2-displayImage" src="'.$imageOriginalUrl.'" alt="'.$ItemIdxName.'" title="'.$ItemIdxName.'" '.$imgAttributes.'/>';
-				} else {
-					// *** thumb ***
-					$HTML = galleryUtils::getThumb( $gallery->get('id'),$imageHeight,$imageWidth,"mod_rsgallery2_latest_galleries_img" );	// thumbid, height, width, class
-				}
+
+                // Gallery has images ? (thumb exists)
+                if (! empty($gallery->thumb))
+                {
+	                $ItemIdxName = $gallery->thumb->name;
+
+	                // Create HTML for image: get the url (with/without watermark) with img attributes
+	                if ($displayType == 1)
+	                {
+		                // *** display ***:
+		                $watermark = $rsgConfig->get('watermark');
+		                //$imageUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName ) : imgUtils::getImgDisplayPath( $ItemIdxName );
+		                $imageUrl = $watermark ? waterMarker::showMarkedImage($ItemIdxName) : imgUtils::getImgDisplay($ItemIdxName);
+		                $HTML     = '<img class="rsg2-displayImage" src="' . $imageUrl . '" alt="' . $ItemIdxName . '" title="' . $ItemIdxName . '" ' . $imgAttributes . '/>';
+	                }
+                    elseif ($displayType == 2)
+	                {
+		                // *** original ***
+		                $watermark = $rsgConfig->get('watermark');
+		                //$imageOriginalUrl = $watermark ? waterMarker::showMarkedImage( $ItemIdxName, 'original' ) : imgUtils::getImgOriginalPath( $ItemIdxName );
+		                $imageOriginalUrl = $watermark ? waterMarker::showMarkedImage($ItemIdxName, 'original') : imgUtils::getImgOriginal($ItemIdxName);
+		                $HTML             = '<img class="rsg2-displayImage" src="' . $imageOriginalUrl . '" alt="' . $ItemIdxName . '" title="' . $ItemIdxName . '" ' . $imgAttributes . '/>';
+	                }
+	                else
+	                {
+		                // *** thumb ***
+		                $HTML = galleryUtils::getThumb($gallery->get('id'), $imageHeight, $imageWidth, "mod_rsgallery2_latest_galleries_img");    // thumbid, height, width, class
+	                }
+                }
+                else
+                {
+                    // gallery had no images
+                    $HTML = $gallery->thumbHTML;
+                }
+
 				$name	= $gallery->name;
 				$date	= $gallery->date;
 
