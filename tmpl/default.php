@@ -1,13 +1,19 @@
 <?php
 /**
-* RSGallery2 latest galleries module: shows latest galleries from the Joomla extension RSGallery2 (www.rsgallery2.org).
-* @copyright (C) 2012-2018 RSGallery2 Team
+* @package       RSGallery2 latest galleries module: 
+*                shows latest galleries from the Joomla RSGallery2 component (www.rsgallery2.org).
+* @copyright (C) 2012-2019 RSGallery2 Team
 * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+
+ * @since
+ 
 **/
 
 defined('_JEXEC') or die();
 
 ?>
+
+
 
 <div class="mod_rsgallery2_latest_galleries">
 	<table class="mod_rsgallery2_latest_galleries_table" >
