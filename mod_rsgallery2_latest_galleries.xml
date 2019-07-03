@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" 
 		   version="3.0" 
+		   client="site" 
 	       method="upgrade"
 >
     <name>mod_rsgallery2_latest_galleries</name>
@@ -16,7 +17,7 @@
 	<files>	
 		<filename>mod_rsgallery2_latest_galleries.xml</filename>
 		<filename module="mod_rsgallery2_latest_galleries">mod_rsgallery2_latest_galleries.php</filename>
-		<filename >Rsg2DbSelections.php</filename>
+		<filename>Rsg2DbSelections.php</filename>
 		<filename>index.html</filename>
 		<folder>css</folder>
 		<folder>images</folder>
