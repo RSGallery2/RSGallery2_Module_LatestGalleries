@@ -25,9 +25,9 @@
 		<folder>language</folder>
 	</files>
 	
-    <languages>
-        <language tag="en-GB">language/en-GB/en-GB.mod_rsgallery2_latest_galleries.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_rsgallery2_latest_galleries.sys.ini</language>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_rsgallery2_latest_galleries.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_rsgallery2_latest_galleries.sys.ini</language>
     </languages>
 
 	<config>
@@ -151,7 +151,13 @@
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT" 
 					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT_DESC" 
 				/>
-				<!--<field name="divnamewidth" type="text" default="0" label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH" description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH_DESC" />-->
+				<!--<field 
+                    name="divnamewidth" 
+                    type="text" 
+                    default="0" 
+                    label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH" 
+                    description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH_DESC" 
+                />-->
 				<field 
 					name="filteringspacer4" 
 					type="spacer" 
@@ -163,7 +169,8 @@
 					class="btn-group btn-group-yesno"
 					default="1" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME_DESC">
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_NAME_DESC"
+				>
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -173,7 +180,8 @@
 					default="1" 
 					class="btn-group btn-group-yesno"
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE_DESC">
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_DATE_DESC"
+				>
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
@@ -182,7 +190,8 @@
 					type="text" 
 					default="d-m-Y" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT_DESC">
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DATE_FORMAT_DESC"
+				>
 				</field>
 				
 				<field 
@@ -234,7 +243,8 @@
 	<updateservers>
 		<server type="extension"
 		        priority="1"
-		        name="Github RSGallery2 module latest galleries updates">https://raw.githubusercontent.com/RSGallery2/RSGallery2_Project/master/UpdateServer/RSG2_Module_LatestGalleries_update.xml
+		        name="Github RSGallery2 module latest galleries 
+				updates">https://raw.githubusercontent.com/RSGallery2/RSGallery2_Project/master/UpdateServer/RSG2_Module_LatestGalleries_update.xml
 		</server>
 	</updateservers>
 </extension>
