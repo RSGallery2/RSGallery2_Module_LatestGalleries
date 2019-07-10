@@ -4,15 +4,15 @@
 		   client="site" 
 	       method="upgrade"
 >
-    <name>mod_rsgallery2_latest_galleries</name>
-    <version>4.0.2.0</version>
-    <author>RSGallery2 Team</author>
+	<name>mod_rsgallery2_latest_galleries</name>
+	<version>4.0.2.0</version>
+	<author>RSGallery2 Team</author>
 	<creationDate>30. Jun. 2019</creationDate>
-    <copyright>(C) 2012-2019 RSGallery2 Team</copyright>
+	<copyright>(C) 2012-2019 RSGallery2 Team</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <authorEmail>team@rsgallery2.org</authorEmail>
-    <authorUrl>https://www.rsgallery2.org</authorUrl>
-    <description>MOD_RSGALLERY2_LATEST_GALLERIES_DESC</description>
+	<authorEmail>team@rsgallery2.org</authorEmail>
+	<authorUrl>https://www.rsgallery2.org</authorUrl>
+	<description>MOD_RSGALLERY2_LATEST_GALLERIES_DESC</description>
 	
 	<files>	
 		<filename>mod_rsgallery2_latest_galleries.xml</filename>
@@ -26,9 +26,9 @@
 	</files>
 	
 	<languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_rsgallery2_latest_galleries.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_rsgallery2_latest_galleries.ini</language>
 		<language tag="en-GB">en-GB/en-GB.mod_rsgallery2_latest_galleries.sys.ini</language>
-    </languages>
+	</languages>
 
 	<config>
 		<fields name="params">
@@ -45,21 +45,28 @@
 					type="text" 
 					default="3" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS_DESC" />
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_ROWS_DESC" 
+				/>
 				<field 
 					name="countcolumns" 
 					type="text" 
 					default="3" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS_DESC" /> 
-				<field name="filteringspacer3" type="spacer" hr="true" />
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_NUMBER_OF_COLUMNS_DESC" 
+				/> 
+				<field 
+					name="filteringspacer1" 
+					type="spacer" 
+					hr="true" 
+				/>
 				
 				<field 
 					name="galleryids" 
 					type="text" 
 					default="0" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS_DESC" />
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_GALLERY_IDS_DESC" 
+					/>
 				<field 
 					name="includechildren" 
 					type="radio" 
@@ -72,23 +79,25 @@
 				</field>
 				
 				<field 
-					name="filteringspacer5" 
+					name="filteringspacer2" 
 					type="spacer" 
-					hr="true" />
+					hr="true" 
+					/>
 				
 				<field 
 					name="displaytype" 
 					type="list" 
 					default="0" 
 					label="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE" 
-					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DESC">
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DESC"
+				>
 					<option value="0">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_THUMB</option>
 					<option value="1">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_DISPLAY</option>
 					<option value="2">MOD_RSGALLERY2_LATEST_GALLERIES_DISPLAY_TYPE_ORIGINAL</option>
 				</field>
 				
 				<field 
-					name="filteringspacer1" 
+					name="filteringspacer3" 
 					type="spacer" 
 					hr="true"
 				/>
@@ -135,7 +144,7 @@
 					default="0" 
 					abel="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH" 
 					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIV_WIDTH_DESC" 
-					/>
+				/>
 				
 				<field 
 					name="spacer_divnamecsssize" 
@@ -152,17 +161,17 @@
 					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_HEIGHT_DESC" 
 				/>
 				<!--<field 
-                    name="divnamewidth" 
-                    type="text" 
-                    default="0" 
-                    label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH" 
-                    description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH_DESC" 
-                />-->
+					name="divnamewidth" 
+					type="text" 
+					default="0" 
+					label="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH" 
+					description="MOD_RSGALLERY2_LATEST_GALLERIES_DIVNAME_WIDTH_DESC" 
+				/>-->
 				<field 
 					name="filteringspacer4" 
 					type="spacer" 
 					hr="true" 
-					/>
+				/>
 				<field 
 					name="displayname" 
 					type="radio" 
@@ -195,7 +204,7 @@
 				</field>
 				
 				<field 
-					name="filteringspacer2" 
+					name="filteringspacer5" 
 					type="spacer" 
 					hr="true" 
 				/>
@@ -207,18 +216,21 @@
 					name="layout"
 					type="modulelayout"
 					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" 
+				/>
 				<field
 					name="moduleclass_sfx"
 					type="text"
 					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" 
+				/>
 				<field
 					name="cache"
 					type="list"
 					default="1"
 					label="COM_MODULES_FIELD_CACHING_LABEL"
-					description="COM_MODULES_FIELD_CACHING_DESC">
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
 					<option
 						value="1">JGLOBAL_USE_GLOBAL</option>
 					<option
@@ -229,13 +241,20 @@
 					type="text"
 					default="900"
 					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" 
+				/>
 				<field
 					name="cachemode"
 					type="hidden"
-					default="static">
+					default="static"
+				>
 					<option value="static"></option>
 				</field>
+				<field 
+					name="filteringspacer6" 
+					type="spacer" 
+					hr="true" 
+				/>
 			</fieldset>
 		</fields>
 	</config>
