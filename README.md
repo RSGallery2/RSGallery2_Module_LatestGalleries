@@ -10,14 +10,14 @@ The RSGallery2 Module *LatestGalleries* shows  as the name suggests the latest g
 * .
 * .
 
-##General
+## General
 
 * .
 * .
 * .
 * .
 
-##Parameter
+## Parameter
 
 ![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true)
 
